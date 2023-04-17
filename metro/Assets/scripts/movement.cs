@@ -5,34 +5,68 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Rigidbody player;
+
+    // make the player
+
+    Transform orientation;
+    public Rigidbody player;
+
+    // player walking speed
     public float speed = 11f;
+
+
+    public Vector3 moveDirection;
+
+
     void Start()
     {
         // select the body of player
         player = GetComponent<Rigidbody>();
 
+        // grabs the camera child from the player 
+        orientation = GetComponentInChildren<Camera>().transform;
+
     }
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+        float horizontal = 0f;
+        float vertical = 0f;
+
+    
+       
+
+
+        // movement below
         
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.forward * speed * Time.deltaTime;
+
+            horizontal = -1f;
+            
         }
-        if(Input.GetKey(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.back * speed * Time.deltaTime;
+            horizontal = 1f;
         }
-        if(Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.left * speed * Time.deltaTime;
+            vertical = 1f;
         }
-        if(Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
-            transform.position += Vector3.right * speed * Time.deltaTime;
+            vertical = -1f;
         }
+
+        // calculates the direction of the player for the movement
+        moveDirection = (orientation.TransformDirection(new Vector3(horizontal, 0, vertical))).normalized;
+        // keeps the player on the ground
+        moveDirection.y = 0;
+        
+
+        // applies movement to player position
+        player.transform.localPosition += moveDirection * speed * Time.deltaTime;
+
     }
 }
