@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b1c4b2c32a85c4088be75a89fd3b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 9
+  moveDirection: {x: 0, y: 0, z: 0}
 --- !u!54 &4886902929616640737
 Rigidbody:
   m_ObjectHideFlags: 0
