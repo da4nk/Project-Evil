@@ -1,0 +1,727 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.22f1 (b6c551784ba3) revision 11978065'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Enterprise' Language: 'en' Physical Memory: 16118 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/4249629/Documents/Project-Evil/metro
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62778
+Successfully changed project path to: C:/Users/4249629/Documents/Project-Evil/metro
+C:/Users/4249629/Documents/Project-Evil/metro
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20872] Host "[IP] 192.168.0.18 [Port] 0 [Flags] 2 [Guid] 2340743536 [EditorId] 2340743536 [Version] 1048832 [Id] WindowsEditor(7,PCADSTU-CN44GL3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [20872] Host "[IP] 192.168.0.18 [Port] 0 [Flags] 2 [Guid] 2340743536 [EditorId] 2340743536 [Version] 1048832 [Id] WindowsEditor(7,PCADSTU-CN44GL3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 141.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.22f1 (b6c551784ba3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/4249629/Documents/Project-Evil/metro/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX350 (ID=0x1c94)
+    Vendor:   NVIDIA
+    VRAM:     1979 MB
+    Driver:   31.0.15.1700
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011555 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 125.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Domain Reload Profiling:
+	ReloadAssembly (972ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (668ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (170ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (382ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (125ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006550 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\4249629\Documents\Project-Evil\metro\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\4249629\Documents\Project-Evil\metro\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.989 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1990ms)
+		BeginReloadAssembly (224ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1524ms)
+			LoadAssemblies (173ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (445ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (811ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (634ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (56.5 KB). Loaded Objects now: 3509.
+Memory consumption went from 107.5 MB to 107.4 MB.
+Total: 3.426300 ms (FindLiveObjects: 0.243500 ms CreateObjectMapping: 0.097200 ms MarkObjects: 3.006800 ms  DeleteObjects: 0.077700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 41529.554626 seconds.
+  path: Assets/player.prefab
+  artifactKey: Guid(ee71ab0a02d9b73419fdb7bb637faf81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/player.prefab using Guid(ee71ab0a02d9b73419fdb7bb637faf81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d77d86d11cae4eab72807506d41c13') in 0.077659 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007585 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\4249629\Documents\Project-Evil\metro\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\4249629\Documents\Project-Evil\metro\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.529 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1530ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1243ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (663ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (526ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3040 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (24.6 KB). Loaded Objects now: 3513.
+Memory consumption went from 107.1 MB to 107.1 MB.
+Total: 4.208100 ms (FindLiveObjects: 0.294300 ms CreateObjectMapping: 0.240000 ms MarkObjects: 3.645600 ms  DeleteObjects: 0.026700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 49.324468 seconds.
+  path: Assets/Texures/1000_F_291419802_uIzS3wIpjlFpUFXc0hkzEbakR47twEIh (1).jpg
+  artifactKey: Guid(9d384373c57e0c647b685440c99d5b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/1000_F_291419802_uIzS3wIpjlFpUFXc0hkzEbakR47twEIh (1).jpg using Guid(9d384373c57e0c647b685440c99d5b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2491b60c19bf4515952ad837b8853f71') in 0.177657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Texures/Brick_03-256x256.png
+  artifactKey: Guid(b3adfb9eea805a842ab8c49a23aa3a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_03-256x256.png using Guid(b3adfb9eea805a842ab8c49a23aa3a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e223764b3f7087d68dff70473d56bc') in 0.045092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Texures/Brick_23_L-256x128.png
+  artifactKey: Guid(f8ee11b44c316524399ac9a2906ec0d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_23_L-256x128.png using Guid(f8ee11b44c316524399ac9a2906ec0d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '894c07fe4858f5c9fbb1f0a5a0033674') in 0.039177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Texures/Brick_13-256x256.png
+  artifactKey: Guid(c1d542cd42c56a946abf4af4d7be6452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_13-256x256.png using Guid(c1d542cd42c56a946abf4af4d7be6452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0456c330c46a1703137ea01f552129d') in 0.037699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Texures/Brick_06_L-256x128.png
+  artifactKey: Guid(9a5bae1c2ace16f4a9879c48ffc85897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_06_L-256x128.png using Guid(9a5bae1c2ace16f4a9879c48ffc85897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44110337e9b1a80099ff1ad0eb7f1af7') in 0.036315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Texures/Brick_11_R-256x128.png
+  artifactKey: Guid(c6b41a492a7f37b4687f49466756c156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_11_R-256x128.png using Guid(c6b41a492a7f37b4687f49466756c156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cd7c78ead8caef2318210dc431943e') in 0.036143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Texures/Brick_04_L-256x128.png
+  artifactKey: Guid(b5e986b8f89d4754e9664f7160986d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_04_L-256x128.png using Guid(b5e986b8f89d4754e9664f7160986d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f13ae38560b10e3f914053dd4414f9') in 0.037733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Texures/Brick_13_R-256x128.png
+  artifactKey: Guid(059c02f30e08b1a41b431ad587277d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_13_R-256x128.png using Guid(059c02f30e08b1a41b431ad587277d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d78dfd64750ac3a1890117005a5a4a5') in 0.037859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Texures/Brick_16_L-256x128.png
+  artifactKey: Guid(a23d466001d2b774692d4426fb4049e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_16_L-256x128.png using Guid(a23d466001d2b774692d4426fb4049e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6e83e08e8dad393903d599ae215424') in 0.042225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Texures/Brick_02-256x256.png
+  artifactKey: Guid(5b2c28c44671eac438ce466b789c24b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_02-256x256.png using Guid(5b2c28c44671eac438ce466b789c24b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64a917c9c807b9815f098871c4212e5') in 0.047588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Texures/Brick_22_R-256x128.png
+  artifactKey: Guid(0d7f91a200cc1a741b1ebca1bb9367e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_22_R-256x128.png using Guid(0d7f91a200cc1a741b1ebca1bb9367e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2020453d1dda24d28cbbd925d94d661f') in 0.044071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Texures/Brick_14-256x256.png
+  artifactKey: Guid(bf806e482a4c4744f9914841f82f26f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_14-256x256.png using Guid(bf806e482a4c4744f9914841f82f26f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e3e834e96c2aa6a519a17ab7aa2dfb') in 0.047093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Texures/Brick_23_R-256x128.png
+  artifactKey: Guid(4462ae9af11eec149b805ab4dab3238b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_23_R-256x128.png using Guid(4462ae9af11eec149b805ab4dab3238b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e317fa5c0e772c2dccdaaac4d71ef6') in 0.041437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Texures/Brick_10_R-256x128.png
+  artifactKey: Guid(fa125d9982ac11840b42139fa1f9c578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_10_R-256x128.png using Guid(fa125d9982ac11840b42139fa1f9c578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044608729ea2c1107f6df1fd2d9dc138') in 0.045221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Texures/Brick_10-256x256.png
+  artifactKey: Guid(70cd7245aef1db54aa9d782690493e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_10-256x256.png using Guid(70cd7245aef1db54aa9d782690493e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '971f9857a8b7d9213dfce7bbf01fe270') in 0.047533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Texures/Brick_09_L-256x128.png
+  artifactKey: Guid(6772c7f1af37e5b4eae1e2e40c6f5270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_09_L-256x128.png using Guid(6772c7f1af37e5b4eae1e2e40c6f5270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf146b744031703c89a50da93427277') in 0.047287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Texures/Brick_20-256x256.png
+  artifactKey: Guid(54f8ae9a94e7b834690067205383b61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_20-256x256.png using Guid(54f8ae9a94e7b834690067205383b61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfc6c7fe282f82c64d1775901236512') in 0.045231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Texures/Brick_16-256x256.png
+  artifactKey: Guid(2f41b1dff4bfb0849a4cb7f61591e6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_16-256x256.png using Guid(2f41b1dff4bfb0849a4cb7f61591e6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2bc6e5ad8e817272c8497c0b679390') in 0.042646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Texures/Brick_04_R-256x128.png
+  artifactKey: Guid(4a3d5d154f4cdfb4e9ee72fcaeed9c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_04_R-256x128.png using Guid(4a3d5d154f4cdfb4e9ee72fcaeed9c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b76668b0dea0bcfdd5b00693b1e1851') in 0.052471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Texures/Brick_13_L-256x128.png
+  artifactKey: Guid(370967a503cc12542ad75d60d3f25f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_13_L-256x128.png using Guid(370967a503cc12542ad75d60d3f25f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150275aa587b6622a4dbb9f79927b01b') in 0.061305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Texures/Brick_18_R-256x128.png
+  artifactKey: Guid(c8a86955f60e814409512c7eb4a923ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_18_R-256x128.png using Guid(c8a86955f60e814409512c7eb4a923ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9d388b2000d0a4e3a1feb5e216ab2e') in 0.078717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Texures/Brick_09_R-256x128.png
+  artifactKey: Guid(ad77ed5f3835317429abc0821bff83e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_09_R-256x128.png using Guid(ad77ed5f3835317429abc0821bff83e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa4859084cc87a50790c6773eacba45') in 0.057583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Texures/Brick_15-256x256.png
+  artifactKey: Guid(2d96152e2060e2c48951f771bb1bc7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_15-256x256.png using Guid(2d96152e2060e2c48951f771bb1bc7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e3f9078742f810dd36eda47248a97b') in 0.063403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Texures/Brick_20_L-256x128.png
+  artifactKey: Guid(bc7b2ff3ad394b747acbc4d3b19bce82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_20_L-256x128.png using Guid(bc7b2ff3ad394b747acbc4d3b19bce82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9c93990cf2b7317c5a2226a75c10fe') in 0.068144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Texures/Brick_01-256x256.png
+  artifactKey: Guid(2d25c320e25327144af9ab81492b72bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_01-256x256.png using Guid(2d25c320e25327144af9ab81492b72bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3d2b4aa4c1242fd520549abd34dd1c') in 0.066558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Texures/Brick_07_L-256x128.png
+  artifactKey: Guid(77116e53d6d89f146a73e39558abad50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_07_L-256x128.png using Guid(77116e53d6d89f146a73e39558abad50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd052c831a47eae256e120fcda1ad599') in 0.064116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Texures/Brick_15_R-256x128.png
+  artifactKey: Guid(23679c3a8fd396d4a95cbf9ffe7bf52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_15_R-256x128.png using Guid(23679c3a8fd396d4a95cbf9ffe7bf52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e141f36390a48a738193aa400ba173') in 0.058376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Texures/Brick_04-256x256.png
+  artifactKey: Guid(9f0bf9e1bd043054fade878bcd43477a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_04-256x256.png using Guid(9f0bf9e1bd043054fade878bcd43477a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5284eab1a4601cf300a7d56a7392396') in 0.054717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Texures/Brick_14_L-256x128.png
+  artifactKey: Guid(6464b483bceea9f4da48b25ee6e4a175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_14_L-256x128.png using Guid(6464b483bceea9f4da48b25ee6e4a175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52b2d41187b10fe154eb473243765fb') in 0.047065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Texures/Brick_17-256x256.png
+  artifactKey: Guid(c2901fad962c1c248b75754de9777b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_17-256x256.png using Guid(c2901fad962c1c248b75754de9777b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622bb88216be4ce788e8b63c443c5922') in 0.050883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Texures/Brick_24_L-256x128.png
+  artifactKey: Guid(76fa86c14a40ba84db69be8dfde8b335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_24_L-256x128.png using Guid(76fa86c14a40ba84db69be8dfde8b335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecae0f01c75ed1961af7c024e202e2b5') in 0.044855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Texures/Brick_01_R-256x128.png
+  artifactKey: Guid(09b0603925656c94da80024628f6ad73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_01_R-256x128.png using Guid(09b0603925656c94da80024628f6ad73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46dcab9be9cb697ab3fab425b4d6ad7') in 0.050334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Texures/Brick_12_L-258x128.png
+  artifactKey: Guid(f313b7a2a49b6394d862c23a72c6be15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_12_L-258x128.png using Guid(f313b7a2a49b6394d862c23a72c6be15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebf348bee664698cdfd4829212ffd5c4') in 0.051417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Texures/Brick_21_L-256x128.png
+  artifactKey: Guid(9d197240fab5f004ba9cbd746811de02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_21_L-256x128.png using Guid(9d197240fab5f004ba9cbd746811de02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '955ca3aa11b4eb628c4de69e3e661ebc') in 0.050705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Texures/Brick_14_R-256x128.png
+  artifactKey: Guid(7590e59bdb7ab8744a4c763a6524b45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_14_R-256x128.png using Guid(7590e59bdb7ab8744a4c763a6524b45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1587f353fafb9117dfa370395a1cd632') in 0.045253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Texures/Brick_17_L-256x128.png
+  artifactKey: Guid(81dac9b3a94dd064da621324a4e04598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_17_L-256x128.png using Guid(81dac9b3a94dd064da621324a4e04598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82f25aaa4c87e7ccc8f8123f1816aaf') in 0.050306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Texures/Brick_21_R-256x128.png
+  artifactKey: Guid(47bd8160d92a8494ca8c7c3dbe42dda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_21_R-256x128.png using Guid(47bd8160d92a8494ca8c7c3dbe42dda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e8ced6dc9939edbb0d652499898464') in 0.052530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.225501 seconds.
+  path: Assets/Texures/Brick_24_R-256x128.png
+  artifactKey: Guid(436c1663e3ad51c43ad2665dfcb922c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Brick_24_R-256x128.png using Guid(436c1663e3ad51c43ad2665dfcb922c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a8746a14ec080cdf9aaace93274597b') in 0.039825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Texures/Cutlery.png
+  artifactKey: Guid(5edf2cd36843a25409cf4d13e8dbf82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Cutlery.png using Guid(5edf2cd36843a25409cf4d13e8dbf82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3aeb78a07f7fb47a5d6c06b7a3af44f') in 0.037397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Texures/Contain.jpg
+  artifactKey: Guid(b854eca5ffd3caa46ba364ce70f79ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Contain.jpg using Guid(b854eca5ffd3caa46ba364ce70f79ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a419731f4f7fe73acf2003df866b3661') in 0.037000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Texures/Dirt_12-256x256.png
+  artifactKey: Guid(00d07fa9554ddea45b442d0303a7c439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_12-256x256.png using Guid(00d07fa9554ddea45b442d0303a7c439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb8bf55c3cea828ca3f708ecc1e386c') in 0.038349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Texures/Elements_20-256x256.png
+  artifactKey: Guid(bb2bc3144b2586649aa819064a59f900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Elements_20-256x256.png using Guid(bb2bc3144b2586649aa819064a59f900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb274a239f79e5f185e7164a17fa5129') in 0.051302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Texures/Fabric_04.jpg
+  artifactKey: Guid(07a0bef80f311ec409fa21313c6f8eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_04.jpg using Guid(07a0bef80f311ec409fa21313c6f8eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d35802073c7760f63b0021343fb30b6') in 0.048969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Texures/Fabric_11.jpg
+  artifactKey: Guid(c376fe368d4d3a64d9efb1c57901d5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_11.jpg using Guid(c376fe368d4d3a64d9efb1c57901d5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e99734496a18869a40d6740703d2260b') in 0.045595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Texures/Fabric_21.jpg
+  artifactKey: Guid(ed2baa1bd0ab3864c85a917ffd168607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_21.jpg using Guid(ed2baa1bd0ab3864c85a917ffd168607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c9961816a8bc489233faeff2c7eb51') in 0.038148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Texures/Grass_01_L-256x128.png
+  artifactKey: Guid(e2543077e09e0894a83d647158c06e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Grass_01_L-256x128.png using Guid(e2543077e09e0894a83d647158c06e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2cb322bff18aae24e35be4ac0578fd') in 0.034889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Texures/Foods.jpg
+  artifactKey: Guid(1f8d81653d46ebf4da269e0bd4f1b350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Foods.jpg using Guid(1f8d81653d46ebf4da269e0bd4f1b350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aff19cd996609161e48e5bb47415a59') in 0.040552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Texures/Grass_02_L-256x128.png
+  artifactKey: Guid(12eb1289eb1aeab449bff01dccad2163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Grass_02_L-256x128.png using Guid(12eb1289eb1aeab449bff01dccad2163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a1ed3540568afb53de39c9a8b71ee2c') in 0.042897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Texures/Grass_03_L-256x128.png
+  artifactKey: Guid(b3e1514106d37ab42a9f88c299c4e54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Grass_03_L-256x128.png using Guid(b3e1514106d37ab42a9f88c299c4e54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7068eb61a35001752d5bba1e98cc452d') in 0.038983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Texures/Foods_03.jpg
+  artifactKey: Guid(fb176707c27a7bc4e8f409c4d9ade4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Foods_03.jpg using Guid(fb176707c27a7bc4e8f409c4d9ade4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7589dcf75c03be1a4a6f1e93494631d2') in 0.042861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Texures/Fabric_03.jpg
+  artifactKey: Guid(ccce98410ca84b341ac85fad1ed7100c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_03.jpg using Guid(ccce98410ca84b341ac85fad1ed7100c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6456da23e2f811c25fe1a299d8f6ca1') in 0.044005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Texures/Dirt_16-256x256.png
+  artifactKey: Guid(d72227dc80d3ae346a0d14631dda490e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_16-256x256.png using Guid(d72227dc80d3ae346a0d14631dda490e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48dc8cfbb8f32a8b21928c4c8ede5b3') in 0.043003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Texures/crate.jpg
+  artifactKey: Guid(cbf210d7b0e04f346a149fbcf8b37053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/crate.jpg using Guid(cbf210d7b0e04f346a149fbcf8b37053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf907253f4119ee1347a267001c7687') in 0.053902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Texures/Dirt_13-256x256.png
+  artifactKey: Guid(65006b29a2a538f4aa20e1cd2fc04415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_13-256x256.png using Guid(65006b29a2a538f4aa20e1cd2fc04415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d04f241133e60de938bfe3c6ab3d813') in 0.049172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Texures/Clothing.png
+  artifactKey: Guid(4063432be2e20a74cb8b357eeacef22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Clothing.png using Guid(4063432be2e20a74cb8b357eeacef22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4d48398310d8d0a430bd60d816d690') in 0.050176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Texures/Elements_16-256x256.png
+  artifactKey: Guid(16cbaf8d76ae63e409b46374399c8595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Elements_16-256x256.png using Guid(16cbaf8d76ae63e409b46374399c8595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f5c69df4d37e1a50f8bbe33df74a2e') in 0.048650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Texures/Dirt_11-256x256.png
+  artifactKey: Guid(7561196a429ae6f4191fae3281f66c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_11-256x256.png using Guid(7561196a429ae6f4191fae3281f66c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca8b07ca21eeca5ae7b8465b65a5a3f1') in 0.047021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Texures/Fabric_07.jpg
+  artifactKey: Guid(13f32b67e29cbf04a990476b87ebb638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_07.jpg using Guid(13f32b67e29cbf04a990476b87ebb638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a091d669ebbcb1f660652919c9225fc7') in 0.043921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Texures/Fabric_09.jpg
+  artifactKey: Guid(134e22407c6c03d418b496a19ae7de0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_09.jpg using Guid(134e22407c6c03d418b496a19ae7de0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d3bba80bc4e576d08243abc2408f7c') in 0.047294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Texures/Grass_02_R-256x128.png
+  artifactKey: Guid(90bc9aca21359f244b8be0afcfb2c66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Grass_02_R-256x128.png using Guid(90bc9aca21359f244b8be0afcfb2c66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d27947ec42e996c18056193a4f2f66') in 0.042976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Texures/Dirt_05-256x256.png
+  artifactKey: Guid(d87dbf67daed79848898ccfe0307a86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_05-256x256.png using Guid(d87dbf67daed79848898ccfe0307a86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c54cc421ea2df2f1ef268ae7d29bb1') in 0.050264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Texures/Foods_05.jpg
+  artifactKey: Guid(79e0def7cd540a14b834dcc43630ffa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Foods_05.jpg using Guid(79e0def7cd540a14b834dcc43630ffa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc1fdc52fdaccd0a0f4e112408f1c7f') in 0.053638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Texures/Dirt_02-256x256.png
+  artifactKey: Guid(be0afeccc4c97014ebe7b7794cc0b547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_02-256x256.png using Guid(be0afeccc4c97014ebe7b7794cc0b547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db88a1e30571c6312ceb1c9dc53cc20b') in 0.049270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Texures/Dirt_20-256x256.png
+  artifactKey: Guid(de49b50d362a5af408b5a01c5ac78d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_20-256x256.png using Guid(de49b50d362a5af408b5a01c5ac78d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a70b1f6dcbcd4ca83e5a6ad9d2ecc78') in 0.047522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Texures/Elements_06-256x256.png
+  artifactKey: Guid(cf6570ee412dd7e468cfaa10cafa7f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Elements_06-256x256.png using Guid(cf6570ee412dd7e468cfaa10cafa7f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c612424095537b0aec67f562fbbe96b0') in 0.038964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Texures/Elements_02-256x256.png
+  artifactKey: Guid(94cc344053ec12a43ba7fa5f440198a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Elements_02-256x256.png using Guid(94cc344053ec12a43ba7fa5f440198a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43cd17a081abb6cba9224bef7a07825e') in 0.048690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Texures/Dirt_15-256x256.png
+  artifactKey: Guid(0581d815db9025147a384e62b8512cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_15-256x256.png using Guid(0581d815db9025147a384e62b8512cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665e6933ce0f110650584f4b5e1f1fd0') in 0.046669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Texures/Fabric_10.jpg
+  artifactKey: Guid(5a46c8dff1278d44d9e9a62ab3785d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_10.jpg using Guid(5a46c8dff1278d44d9e9a62ab3785d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e896bf29b2e47bd7f73d788a4f5fe1') in 0.045733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Texures/Fabric_16.jpg
+  artifactKey: Guid(232262858419f794d8926711c2df2079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_16.jpg using Guid(232262858419f794d8926711c2df2079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30567eec2616659d375df971d2200674') in 0.048851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Texures/Elements_07-256x256.png
+  artifactKey: Guid(7b44bc4a18602bc4a96c667e3606cfd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Elements_07-256x256.png using Guid(7b44bc4a18602bc4a96c667e3606cfd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3463396fae0b4ba0fef1cb6f8d28e748') in 0.041297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Texures/Fabric_01.jpg
+  artifactKey: Guid(2d5b2ee155f3a404293a8f3b4ceb2768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_01.jpg using Guid(2d5b2ee155f3a404293a8f3b4ceb2768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c123673e575a8785e29049b9478c13c4') in 0.048376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Texures/Dirt_10-256x256.png
+  artifactKey: Guid(02aa039afa96f4b49ba628d1462a72ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_10-256x256.png using Guid(02aa039afa96f4b49ba628d1462a72ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a714ef17b46952f837bf839621a2587') in 0.052452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Texures/Foods_07.jpg
+  artifactKey: Guid(2eb5e68e5ba800a45825308fe5b7e9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Foods_07.jpg using Guid(2eb5e68e5ba800a45825308fe5b7e9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93cade53381874b2f743ba79a45655c8') in 0.050985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Texures/crate.png
+  artifactKey: Guid(2851f8595096d554a85e7b8506a88a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/crate.png using Guid(2851f8595096d554a85e7b8506a88a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a290950ae1056113cd00d4fc69660ae7') in 0.042186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Texures/Broom_02.png
+  artifactKey: Guid(02053358adf43ad4ea6e03547e368f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Broom_02.png using Guid(02053358adf43ad4ea6e03547e368f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0b84a2f267e2c933b4fa08d2625da6d') in 0.050167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Texures/container.jpg
+  artifactKey: Guid(8d92a2df238b44141960b5c04f5e16f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/container.jpg using Guid(8d92a2df238b44141960b5c04f5e16f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da270a695b707e6bdfd1cba8335694a') in 0.042317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Texures/Dirt_18-256x256.png
+  artifactKey: Guid(419b5fbf476c8a44990589f94b78f352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_18-256x256.png using Guid(419b5fbf476c8a44990589f94b78f352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da410607a754d1f5b1657e2f59db6e2') in 0.046782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Texures/Grass_03_R-256x128.png
+  artifactKey: Guid(7596d0ad072bb294db94af07a8ca5e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Grass_03_R-256x128.png using Guid(7596d0ad072bb294db94af07a8ca5e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17e204826da206e7d15dbd22ba31f03') in 0.045024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Texures/Dirt_08-256x256.png
+  artifactKey: Guid(7d900eb5796704d4ba868173c0b42c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Dirt_08-256x256.png using Guid(7d900eb5796704d4ba868173c0b42c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a15a4cc816441bdea1acc044caf033a') in 0.046749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Texures/Elements_04-256x256.png
+  artifactKey: Guid(c2cfea5abc667b6468bbb95558836125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Elements_04-256x256.png using Guid(c2cfea5abc667b6468bbb95558836125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf09a693bdaf5c1b8a1d4b15fdd28e9') in 0.042807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Texures/container2.jpg
+  artifactKey: Guid(55aa2a0f3120f734a830e5f4f6858982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/container2.jpg using Guid(55aa2a0f3120f734a830e5f4f6858982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e21e63bd309701bc4567cd1597e3e2') in 0.044274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Texures/Fabric_19.jpg
+  artifactKey: Guid(412a566c0662c4b41ae57348835af01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texures/Fabric_19.jpg using Guid(412a566c0662c4b41ae57348835af01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f9569b2f9f87214a6dac8971d0444e') in 0.045792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 130.963122 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.017917 seconds 
