@@ -1,38 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// movement script In c# for player movement
 public class movement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private Rigidbody player;
     public float speed = 11f;
+    private Rigidbody player;
+     public float radius = 0.5f;
+    public float height = 2f;
+    public int player_size = 2;
+
+
     void Start()
     {
-        // select the body of player
         player = GetComponent<Rigidbody>();
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKey(KeyCode.RightArrow))
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+
+        horizontal = -horizontal;
+
+        if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.forward * speed * Time.deltaTime;
+            vertical = 1f;
         }
-        if(Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.S))
         {
-            transform.position += Vector3.back * speed * Time.deltaTime;
+            vertical = -1f;
         }
-        if(Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * speed * Time.deltaTime;
+            horizontal = 1f;
         }
-        if(Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * speed * Time.deltaTime;
+            horizontal = -1f;
+        }
+
+        float distance = speed * Time.deltaTime;
+        Vector3 localMovement = new Vector3(horizontal, 0f, vertical);
+        Vector3 globalMovement = transform.TransformDirection(localMovement).normalized;
+
+        // make boolean to check if player has hit something
+
+        Vector3 position = transform.position + Vector3.up * (height / 2f - radius);
+        Vector3 direction = transform.forward;
+
+        // Cast the capsule and get the hit information
+        bool collided = !Physics.CapsuleCast(transform.position, position, radius, direction, distance);
+  
+        if (collided)
+        {
+            transform.position += globalMovement * speed * Time.deltaTime;
         }
     }
 }
