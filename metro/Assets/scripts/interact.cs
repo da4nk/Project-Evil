@@ -1,42 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class interact : MonoBehaviour
 {
-    public float pickupDistance = .2f; // Maximum distance the player can pick up an object from
-    public Transform hand; // The player's hand transform
-    public Rigidbody flashlight;
-    bool isNearObject = false;
-    public float rotateSpeed = 48f;
-    [SerializeField] Transform Camera;
+    [SerializeField] private Transform hand;
+    public Transform flashlight;
+    private bool isHolding = false;
+    public GameObject text;
 
-
-
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (other.CompareTag("Pickupable"))
-        {
-            isNearObject = true;
-        }
-      
+        // Find the flashlight object by tag
+        flashlight = GameObject.FindGameObjectWithTag("Pickupable").transform;
+    }
+    
 
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isNearObject = false;
-        }
-    }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.X) && isNearObject)
+        if (!isHolding)
         {
-            flashlight.transform.position = hand.transform.position;
-            flashlight.transform.parent = hand;
-            flashlight.transform.forward = -Camera.transform.up;
+            // If the player is close enough to the flashlight, pick it up
+            float distance = Vector3.Distance(transform.position, flashlight.position);
+            if(distance < 2f)
+            {
+                text.SetActive(true);
+
+            }
+            else if(distance > 2f)
+            {
+                text.SetActive(false);
+            }
+            if (distance < 2f && Input.GetKeyDown(KeyCode.F))
+            {
+                flashlight.SetParent(hand);
+                flashlight.localPosition = Vector3.zero;
+                flashlight.localRotation = Quaternion.identity;
+                flashlight.transform.Rotate(0f, 180f, 0f);
+                flashlight.GetComponent<Rigidbody>().isKinematic = true;
+                isHolding = true;
+            }
         }
-    
+        else
+        {
+            // If the player is holding the flashlight, drop it
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+
+                flashlight.SetParent(null);
+                flashlight.GetComponent<Rigidbody>().isKinematic = false;
+                isHolding = false;
+            }
+        }
     }
 }

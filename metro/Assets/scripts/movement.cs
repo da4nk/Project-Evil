@@ -31,11 +31,11 @@ public class movement : MonoBehaviour
         {
             vertical = -1f;
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.D))
         {
             horizontal = 1f;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
             horizontal = -1f;
         }
