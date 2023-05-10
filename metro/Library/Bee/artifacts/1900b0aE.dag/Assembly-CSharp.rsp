@@ -345,10 +345,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/scripts/flashlight.cs"
+"Assets/scripts/Flashlight.cs"
+"Assets/scripts/flashlightpickup.cs"
 "Assets/scripts/headbobbing.cs"
-"Assets/scripts/interact.cs"
 "Assets/scripts/movement.cs"
+"Assets/scripts/play.cs"
 "Assets/scripts/rotation.cs"
 "Assets/scripts/rotation_y.cs"
 -langversion:9.0
