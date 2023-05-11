@@ -28,7 +28,7 @@ public class flashlightpickup : MonoBehaviour
             {
                 text.SetActive(false);
             }
-            if (distance < 2f && Input.GetKeyDown(KeyCode.F))
+            if (distance < 5f && Input.GetKeyDown(KeyCode.F))
             {
                 flashlight.SetParent(hand);
                 flashlight.localPosition = Vector3.zero;

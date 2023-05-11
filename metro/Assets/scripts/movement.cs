@@ -21,7 +21,7 @@ public class movement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        horizontal = -horizontal;
+
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -49,12 +49,24 @@ public class movement : MonoBehaviour
         Vector3 position = transform.position + Vector3.up * (height / 2f - radius);
         Vector3 direction = transform.forward;
 
+        RaycastHit hit;
+
         // Cast the capsule and get the hit information
-        bool collided = !Physics.CapsuleCast(transform.position, position, radius, direction, distance);
-  
-        if (collided)
+        bool collided = Physics.SphereCast(transform.position, radius, transform.forward, out hit, distance);
+        bool collided2 = Physics.SphereCast(transform.position, radius, -transform.forward, out hit, distance);
+        bool collided3 = Physics.SphereCast(transform.position, radius, transform.right, out hit, distance);
+        bool collided4  = Physics.SphereCast(transform.position, radius, -transform.right, out hit, distance);
+
+
+
+
+
+
+        if (!(collided || collided2 || collided3 || collided4))
         {
             transform.position += globalMovement * speed * Time.deltaTime;
         }
+     
+
     }
 }
