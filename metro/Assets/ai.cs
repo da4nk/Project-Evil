@@ -22,6 +22,12 @@ public class ai : MonoBehaviour
 
     void Update()
     {
+        if(agent == null)
+        {
+            Debug.LogError("NavMeshAgent component not found!");
+
+            
+        }
         // If the player is in sight, chase them
         if (playerInSight)
         {
@@ -54,7 +60,7 @@ public class ai : MonoBehaviour
                 {
                     Vector3 probeDirection = Random.insideUnitSphere;
                     probeDirection.y = 0f;
-                    agent.SetDestination(transform.position + probeDirection * probeDistance);
+                    agent.SetDestination(transform.position + (probeDirection * probeDistance));
                 }
             }
         }

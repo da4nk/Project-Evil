@@ -60,10 +60,10 @@
     <Compile Include="Assets\scripts\flashlightpickup.cs" />
     <Compile Include="Assets\scripts\rotation.cs" />
     <Compile Include="Assets\scripts\Flashlight.cs" />
+    <Compile Include="Assets\health.cs" />
     <Compile Include="Assets\scripts\rotation_y.cs" />
     <Compile Include="Assets\ai.cs" />
     <Compile Include="Assets\scripts\play.cs" />
-    <Compile Include="Assets\health.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
