@@ -62,7 +62,7 @@ public class movement : MonoBehaviour
 
 
 
-        if (!(collided || collided2 || collided3 || collided4))
+        if ((collided || collided2 || collided3 || collided4))
         {
             transform.position += globalMovement * speed * Time.deltaTime;
         }
