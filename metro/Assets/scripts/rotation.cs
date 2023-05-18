@@ -19,7 +19,7 @@ public class rotation : MonoBehaviour
     {
         // get the mouse position and then apply that to the object in unity rotation multiplied by the sensitivty
         turning.x += Input.GetAxis("Mouse Y") * sensitivity;
-        transform.localRotation = Quaternion.Euler(0,-turning.x,0);
+        transform.localRotation = Quaternion.Euler(-turning.x,0,0);
        
         turning.x = Mathf.Clamp(turning.x, -90, 90);
 
