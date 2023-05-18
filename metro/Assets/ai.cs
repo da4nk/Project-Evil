@@ -3,23 +3,28 @@ using UnityEngine.AI;
 
 public class ai : MonoBehaviour
 {
-    public float probdistance = 30f;
-    public float searchradius = 30f;
-    public float chasedistance = 50f;
-    public float movespeed = 20f;
-    public float chasespeed = 50;
+    public float searchRadius = 30f;
+    public float probeDistance = 100f;
+    public float chaseDistance = 50f;
+    public float moveSpeed = 20f;
+    public float chaseSpeed = 50f;
+    public float catchDistance = 50f;
 
     private NavMeshAgent agent;
     private Transform playerTransform;
     private Vector3 lastKnownPlayerPosition;
-    private bool playerInSight = false;
-    private float laser = 100f;
+    private bool playerInSight;
+    private AudioSource audioSource;
+    public AudioClip chaseSound;
+    public AudioClip jumpScareSound;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        lastKnownPlayerPosition = playerTransform.position;
+        lastKnownPlayerPosition = transform.position;
+        playerInSight = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -33,28 +38,56 @@ public class ai : MonoBehaviour
         if (playerTransform != null)
         {
             RaycastHit hit;
-            bool foundPlayer = Physics.Raycast(transform.position, playerTransform.position - transform.position, out hit, laser);
-            if (foundPlayer)
+            bool foundPlayer = Physics.Raycast(transform.position, playerTransform.position - transform.position, out hit, Mathf.Infinity);
+            
+            if (foundPlayer || Vector3.Distance(agent.transform.position, lastKnownPlayerPosition) <= searchRadius)
             {
-                playerInSight = true;
-                lastKnownPlayerPosition = playerTransform.position;
-                agent.SetDestination(lastKnownPlayerPosition);
-                if (playerInSight)
+                if (Vector3.Distance(agent.transform.position, playerTransform.position) <= chaseDistance)
                 {
-                    if (Vector3.Distance(agent.transform.position, lastKnownPlayerPosition) > chasedistance)
-                    {
-                        agent.SetDestination(lastKnownPlayerPosition);
-                    }
-
+                    playerInSight = true;
+                    lastKnownPlayerPosition = playerTransform.position;
+                    agent.speed = chaseSpeed;
+                    agent.SetDestination(lastKnownPlayerPosition);
+                    
+                    if (!audioSource.isPlaying)
+                        audioSource.PlayOneShot(chaseSound);
                 }
             }
             else
             {
-                Vector3 probeDirection = Random.insideUnitSphere;
-                probeDirection.y = 0f;
-                agent.SetDestination(transform.position + (probeDirection * probdistance));
+                if (playerInSight)
+                {
+                    if (Vector3.Distance(agent.transform.position, lastKnownPlayerPosition) > chaseDistance)
+                    {
+                        agent.speed = moveSpeed;
+                        agent.SetDestination(lastKnownPlayerPosition);
+                        
+                        if (!audioSource.isPlaying)
+                            audioSource.PlayOneShot(chaseSound);
+                    }
+                }
+                else
+                {
+                    if (Vector3.Distance(agent.transform.position, playerTransform.position) <= catchDistance)
+                    {
+                        if (!audioSource.isPlaying)
+                            audioSource.PlayOneShot(jumpScareSound);
+                    }
+                
+                    if (Vector3.Distance(agent.transform.position, lastKnownPlayerPosition) <= searchRadius)
+                    {
+                        Vector3 probeDirection = Random.insideUnitSphere;
+                        probeDirection.y = 0f;
+                        agent.speed = moveSpeed;
+                        agent.SetDestination(transform.position + (probeDirection * probeDistance));
+                    }
+                    else
+                    {
+                        agent.speed = moveSpeed;
+                        agent.SetDestination(lastKnownPlayerPosition);
+                    }
+                }
             }
-
         }
     }
 }
