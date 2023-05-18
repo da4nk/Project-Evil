@@ -26,7 +26,7 @@ public class movement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             vertical = 1f;
-                    Debug.Log("Text");
+
 
         }
         if (Input.GetKey(KeyCode.S))
@@ -64,7 +64,7 @@ public class movement : MonoBehaviour
 
 
 
-        if ((collided || collided2 || collided3 || collided4))
+        if (!(collided || collided2 || collided3 || collided4))
         {
             transform.position += globalMovement * speed * Time.deltaTime;
         }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flashlight : MonoBehaviour
+public class flashlight : MonoBehaviour
 {
     // Start is called before the first frame update
     public new GameObject light;

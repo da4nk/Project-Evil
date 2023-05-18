@@ -5,9 +5,10 @@ using UnityEngine;
 public class rotation_y : MonoBehaviour
 {
     public Vector3 rotation;
+    
     public float sensitivity = 6;
 
-
+    
 
     // Start is called before the first frame update
     void Start()
